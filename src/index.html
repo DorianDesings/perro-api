@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog API</title>
+  </head>
+  <body>
+    <label for="breed">Select a breed:</label>
+    <select name="breed" id="breed-select" class="breed-select"></select>
+    <button id="get-picture">Get picture</button>
+
+    <div class="picture__container">
+      <button id="favorite" class="favorite" hidden>Save</button>
+      <div class="picture" id="picture"></div>
+    </div>
+    <h2>Favourites:</h2>
+    <div class="favorites" id="favorites"></div>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
