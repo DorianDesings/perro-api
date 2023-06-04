@@ -10,14 +10,9 @@ let savedPictures = [];
 const printFavorites = () => {
   const fragment = document.createDocumentFragment();
   savedPictures.forEach(url => {
-    const div = document.createElement('div');
     const img = document.createElement('img');
-    const button = document.createElement('button');
-    button.textContent = 'Unsave';
     img.src = url;
-    div.append(img);
-    div.append(button);
-    fragment.append(div);
+    fragment.append(img);
   });
   favoritesElement.append(fragment);
 };
